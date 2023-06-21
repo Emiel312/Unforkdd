@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unforkdd.LoginPagina"
+             Title="LoginPagina">
+    <StackLayout VerticalOptions="CenterAndExpand"
+             HorizontalOptions="CenterAndExpand">
+        <Entry x:Name="UsernameEntry" Placeholder="Username" />
+        <Entry x:Name="PasswordEntry" Placeholder="Password" 
+               IsPassword="True"/>
+        <Button Text="Login" Clicked="OnLoginClicked" />
+        <Button Text="Wachtwoord vergeten" Clicked="OnForgotPasswordClicked" />
+        <Button Text="Registreren" Clicked="OnRegisterClicked" />
+    </StackLayout>
+</ContentPage>
