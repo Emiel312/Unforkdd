@@ -60,6 +60,9 @@
 	  <MauiXaml Update="ActiviteitenPagina.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="GroepenPagina.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="IncheckPagina.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
