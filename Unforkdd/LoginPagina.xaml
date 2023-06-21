@@ -2,14 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Unforkdd.LoginPagina"
-             Title="LoginPagina">
-    <StackLayout VerticalOptions="CenterAndExpand"
-             HorizontalOptions="CenterAndExpand">
-        <Entry x:Name="UsernameEntry" Placeholder="Username" />
-        <Entry x:Name="PasswordEntry" Placeholder="Password" 
-               IsPassword="True"/>
-        <Button Text="Login" Clicked="OnLoginClicked" />
-        <Button Text="Wachtwoord vergeten" Clicked="OnForgotPasswordClicked" />
-        <Button Text="Registreren" Clicked="OnRegisterClicked" />
+             Title="Login Pagina"
+             NavigationPage.HasNavigationBar="False">
+    <!--background image als het nodig is-->
+    <!--<ContentPage.BackgroundImageSource>
+        <FileImageSource File="./Resources/Images/person.png" />
+    </ContentPage.BackgroundImageSource>-->
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" Margin="10">
+        <!--username en password-->
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" Margin="0,0,20,0">
+            <Entry x:Name="UsernameEntry" Placeholder="Username" />
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True"/>
+        </StackLayout>
+        <!--buttons login,register,password-->
+        <StackLayout HorizontalOptions="CenterAndExpand" >
+            <Button Text="Login" Clicked="OnLoginClicked" Margin="0,10"/>
+            <Button Text="Wachtwoord vergeten" Clicked="OnForgotPasswordClicked" Margin="0,10"/>
+            <Button Text="Registreren" Clicked="OnRegisterClicked" Margin="0,10"/>
+        </StackLayout>
     </StackLayout>
+
 </ContentPage>

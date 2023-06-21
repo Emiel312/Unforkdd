@@ -26,7 +26,8 @@ public partial class LoginPagina : ContentPage
 	}
 	private void OnRegisterClicked(object sender, EventArgs e)
 	{
-		DisplayAlert("Register", "Redirecting to registration page", "OK");
+        Navigation.PushAsync(new RegistratiePagina());
+        //DisplayAlert("Register", "Redirecting to registration page", "OK");
 	}
 	private bool isValidCredentials(string username, string password) 
 	{
