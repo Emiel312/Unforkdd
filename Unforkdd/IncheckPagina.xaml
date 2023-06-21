@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unforkdd.IncheckPagina"
+             Title="IncheckPagina">
+    <StackLayout>
+        <Button Text="Add Image" Clicked="OnAddImageClicked" />
+
+
+
+        <Entry x:Name="TitleEntry" Placeholder="Title" />
+        <Entry x:Name="RestaurantEntry" Placeholder="Restaurant" />
+        <Entry x:Name="DescriptionEntry" Placeholder="Description" />
+
+
+
+        <Label Text="Rate the Dish" HorizontalOptions="Center" />
+
+
+
+        <Slider x:Name="RatingSlider" Minimum="1" Maximum="10" Value="5" 
+                MinimumTrackColor="DodgerBlue" MaximumTrackColor="LightGray"
+                ThumbColor="DodgerBlue" />
+
+
+
+        <Button Text="Check-In" Clicked="OnCheckInClicked" />
+    </StackLayout>
+
+</ContentPage>

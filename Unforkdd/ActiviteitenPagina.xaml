@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unforkdd.ActiviteitenPagina"
+             Title="ActiviteitenPagina">
+    <StackLayout x:Name="activitiesStackLayout">
+        <ScrollView>
+            <!-- Placeholder content for activities -->
+            <StackLayout>
+                <!-- Activities will be dynamically added here -->
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Custom navigation bar -->
+        <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" Padding="10">
+            <Button Text="Check-In" Clicked="OnCheckInClicked" />
+            <Button Text="Followers" Clicked="OnFollowersClicked" />
+            <Button Text="Home" Clicked="OnHomeClicked" />
+            <Button Text="Profile" Clicked="OnProfileClicked" />
+            <Button Text="Restaurant" Clicked="OnRestaurantClicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

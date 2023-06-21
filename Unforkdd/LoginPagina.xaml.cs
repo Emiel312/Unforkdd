@@ -13,7 +13,7 @@ public partial class LoginPagina : ContentPage
 
 		if (isValidCredentials(username, password)) 
 		{
-			DisplayAlert("Succes", "Login successful!", "OK");
+			Navigation.PushAsync(new ActiviteitenPagina());
 		}
 		else
 		{
