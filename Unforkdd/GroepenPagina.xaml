@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unforkdd.GroepenPagina"
+             Title="GroepenPagina">
+    <StackLayout>
+        <ScrollView>
+            <StackLayout x:Name="GroupsStackLayout">
+                <StackLayout Orientation="Vertical" Margin="10">
+                    <Grid BackgroundColor="LightGray" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Data binding implementeren -->
+
+                        <Image Source="group_placeholder.png" Aspect="AspectFill" WidthRequest="100" HeightRequest="100" />
+
+
+
+                        <Label Text="Group 1" FontSize="18" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label Text="Members: 10" FontSize="14" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+                    </Grid>
+                </StackLayout>
+
+
+
+                <StackLayout Orientation="Vertical" Margin="10">
+                    <Grid BackgroundColor="LightGray" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+
+
+                        <Image Source="group_placeholder.png" Aspect="AspectFill" WidthRequest="100" HeightRequest="100" />
+
+
+
+                        <Label Text="Group 2" FontSize="18" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" />
+                        <Label Text="Members: 5" FontSize="14" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" />
+                    </Grid>
+                </StackLayout>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

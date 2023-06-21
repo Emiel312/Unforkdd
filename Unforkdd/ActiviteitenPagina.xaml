@@ -18,6 +18,7 @@
             <Button Text="Home" Clicked="OnHomeClicked" />
             <Button Text="Profile" Clicked="OnProfileClicked" />
             <Button Text="Restaurant" Clicked="OnRestaurantClicked" />
+            <Button Text="Groepen" Clicked="OnGroepenClicked" />
         </StackLayout>
     </StackLayout>
 </ContentPage>

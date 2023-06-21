@@ -43,6 +43,11 @@ public partial class ActiviteitenPagina : ContentPage
         Navigation.PushAsync(new VolgersPagina());
     }
 
+    private void OnGroepenClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new GroepenPagina());
+    }
+
 
 
     private void OnHomeClicked(object sender, EventArgs e)
