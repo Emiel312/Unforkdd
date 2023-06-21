@@ -40,8 +40,7 @@ public partial class ActiviteitenPagina : ContentPage
 
     private void OnFollowersClicked(object sender, EventArgs e)
     {
-        // Implement your logic for the "Followers" button click
-        DisplayAlert("Followers", "View followers logic here.", "OK");
+        Navigation.PushAsync(new VolgersPagina());
     }
 
 
