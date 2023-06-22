@@ -22,8 +22,9 @@ public partial class LoginPagina : ContentPage
 	}
 	private void OnForgotPasswordClicked(object sender, EventArgs e)
 	{
-		DisplayAlert("Forogot Password", "Please contact support to reset your password", "OK");
-	}
+        //DisplayAlert("Forogot Password", "Please contact support to reset your password", "OK");
+        Navigation.PushAsync(new WachtwoordResetPagina());
+    }
 	private void OnRegisterClicked(object sender, EventArgs e)
 	{
         Navigation.PushAsync(new RegistratiePagina());
