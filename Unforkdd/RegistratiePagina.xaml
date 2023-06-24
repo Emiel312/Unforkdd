@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Unforkdd.RegistratiePagina"
-             Title="RegistratiePagina"
-             NavigationPage.HasNavigationBar="False">
+             Title="Nieuwe Account"
+             NavigationPage.HasNavigationBar="True">
 
     <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" Margin="10">
         <!--username en password-->
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" Margin="0,0,20,0">
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill">
             <Label Text="Choose Username" HorizontalOptions="Center"/>
             <Entry x:Name="Username" Placeholder="Username" />
             <Label Text="Choose Password" HorizontalOptions="Center" />
@@ -17,7 +17,7 @@
         </StackLayout>
         <!--button register-->
         <StackLayout HorizontalOptions="CenterAndExpand" >
-            <Button Text="Registreren" Clicked="Button_Clicked" Margin="0,10"/>
+            <Button Text="Registreren" Clicked="Button_Clicked"/>
         </StackLayout>
     </StackLayout>
     
