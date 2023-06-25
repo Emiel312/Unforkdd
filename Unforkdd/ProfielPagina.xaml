@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unforkdd.ProfielPagina"
+             Title="ProfielPagina">
+
+    <VerticalStackLayout>
+
+        <Label x:Name="Voornaam" Text="{Binding Voornaam}" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label x:Name="Achternaam" Text="{Binding Achternaam}" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label x:Name="Woonplaats" Text="{Binding Woonplaats}" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label x:Name="Email" Text="{Binding Email}" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label x:Name="Bio" Text="{Binding Bio}" VerticalOptions="Center" HorizontalOptions="Center" />
+
+
+        <VerticalStackLayout Spacing="10" Margin="5">
+            <Editor x:Name="UserEditor" Placeholder="Enter user" HeightRequest="100" />
+
+            <Button Text="ProfielPagina bewerken" Clicked="BewerkenButton_Clicked" HorizontalOptions="Center" Margin="0,20,0,0" />
+
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+                <Button Text="Save" Clicked="SaveButton_Clicked" />
+
+                <Button Grid.Column="1"
+                    Text="Delete" Clicked="DeleteButton_Clicked" />
+            </Grid>
+
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+
+
+</ContentPage>
