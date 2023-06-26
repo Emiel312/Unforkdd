@@ -60,8 +60,7 @@ public partial class ActiviteitenPagina : ContentPage
 
     private void OnProfileClicked(object sender, EventArgs e)
     {
-        // Implement your logic for the "Profile" button click
-        DisplayAlert("Profile", "Navigate to profile page logic here.", "OK");
+        Navigation.PushAsync(new ProfielPagina());
     }
 
 

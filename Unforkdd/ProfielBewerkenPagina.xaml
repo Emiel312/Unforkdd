@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Unforkdd.ProfielBewerkenPagina"
+             Title="ProfielBewerkenPagina">
+    <VerticalStackLayout>
+
+        <Button Text="Afbeelding toevoegen" Clicked="AddImage_Clicked" />
+        <Button Text="Wijzigen" Clicked="Update_Clicked" />
+        <Button Text="Verwijderen" Clicked="Delete_Clicked" />
+        <Button Text="Terug naar afbeelding" Clicked="ReturnToImage_Clicked"/>
+        <Button Text="Opslaan profiel" Clicked="SaveProfile_Clicked"/>
+        <Button Text="Valideren" Clicked="Validate_Clicked" />
+
+        <Button Text="Naar profiel (vriend)" Clicked="GoToProfilePage_Clicked"/>
+        <Button Text="Gegevens ophalen" Clicked="RetrieveData_Clicked"/>
+        <Button Text="Gegevens opslaan" Clicked="SaveData_Clicked"/>
+        <Button Text="Gegevens verwijderen" Clicked="DeleteData_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
