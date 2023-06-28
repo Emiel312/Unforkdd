@@ -4,20 +4,24 @@
              x:Class="Unforkdd.RegistratiePagina"
              Title="Nieuwe Account"
              NavigationPage.HasNavigationBar="True">
+    <ContentPage.BackgroundImageSource>
+        <FileImageSource File="./Resources/Images/bg_person.png" />
+    </ContentPage.BackgroundImageSource>
 
-    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" Margin="10">
+    <StackLayout VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="{StaticResource CustomColor}">
         <!--username en password-->
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill">
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" Margin="10">
             <Label Text="Choose Username" HorizontalOptions="Center"/>
-            <Entry x:Name="Username" Placeholder="Username" />
+            <Entry x:Name="Username" Placeholder="Username" PlaceholderColor="gray"/>
             <Label Text="Choose Password" HorizontalOptions="Center" />
-            <Entry x:Name="ChoosPasswordEntry" Placeholder="Password" />
+            <Entry x:Name="ChoosPasswordEntry" Placeholder="Password" PlaceholderColor="gray"/>
             <Label Text="Repeat Password" HorizontalOptions="Center"/>
-            <Entry x:Name="ChoosPasswordEntrySecond" Placeholder="Repeat Password"/>
+            <Entry x:Name="ChoosPasswordEntrySecond" Placeholder="Repeat Password" PlaceholderColor="gray"/>
+            <Button Text="Registreren" Clicked="Button_Clicked" HorizontalOptions="CenterAndExpand" WidthRequest="150"/>
         </StackLayout>
         <!--button register-->
-        <StackLayout HorizontalOptions="CenterAndExpand" >
-            <Button Text="Registreren" Clicked="Button_Clicked"/>
+        <StackLayout HorizontalOptions="CenterAndExpand" Margin="10">
+           
         </StackLayout>
     </StackLayout>
     
