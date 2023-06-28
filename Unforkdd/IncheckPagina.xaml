@@ -3,28 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Unforkdd.IncheckPagina"
              Title="IncheckPagina">
-    <StackLayout>
-        <Button Text="Add Image" Clicked="OnAddImageClicked" />
+    <StackLayout Margin="10">
+        <VerticalStackLayout>
+            <Label Text="Afbeeldingen" FontSize="Large" HorizontalOptions="Center"></Label>
+            <Image Margin="0,10" Source="./Resources/Images/person.png" HeightRequest="300" Aspect="AspectFill"></Image>
+        </VerticalStackLayout>
+         <Button Text="Add Image" Clicked="OnAddImageClicked" />
 
-
-
-        <Entry x:Name="TitleEntry" Placeholder="Title" />
-        <Entry x:Name="RestaurantEntry" Placeholder="Restaurant" />
-        <Entry x:Name="DescriptionEntry" Placeholder="Description" />
-
-
+        <Entry x:Name="TitleEntry" Placeholder="Title" PlaceholderColor="Gray"/>
+        <Entry x:Name="RestaurantEntry" Placeholder="Restaurant" PlaceholderColor="Gray"/>
+        <Entry x:Name="DescriptionEntry" Placeholder="Description" PlaceholderColor="Gray"/>
 
         <Label Text="Rate the Dish" HorizontalOptions="Center" />
 
-
-
         <Slider x:Name="RatingSlider" Minimum="1" Maximum="10" Value="5" 
-                MinimumTrackColor="DodgerBlue" MaximumTrackColor="LightGray"
+                MinimumTrackColor="DodgerBlue" MaximumTrackColor="Gray"
                 ThumbColor="DodgerBlue" />
 
-
-
-        <Button Text="Check-In" Clicked="OnCheckInClicked" />
+        <Button Text="Check-In" Clicked="OnCheckInClicked" Margin="0,10"/>
     </StackLayout>
 
 </ContentPage>

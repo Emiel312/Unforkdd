@@ -13,8 +13,8 @@
         
         <!--username en password , Button login-->
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Fill" Margin="10">
-            <Entry x:Name="UsernameEntry" Placeholder="Username" />
-            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True"/>
+            <Entry x:Name="UsernameEntry" Placeholder="Username" TextColor="Black" PlaceholderColor="Black"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextColor="Black" PlaceholderColor="Black"/>
             <Button Text="Login" Clicked="OnLoginClicked" HorizontalOptions="CenterAndExpand" WidthRequest="150"/>
         </StackLayout>
 
